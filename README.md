@@ -1,0 +1,2 @@
+# TestRailReportGenerator
+TestRail Report Generator
