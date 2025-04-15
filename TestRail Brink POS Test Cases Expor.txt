@@ -1,0 +1,27 @@
+TestRail Brink POS Test Cases Export
+
+Reason to create this
+Background
+1. The TestRail metrics should be generate bi-weekly to monitor our case progress and send out to all BrinkQA
+2. This task will be passed to new co-ops every term
+3. But people tend to forgot this task because it only needs to be generate every other week. (I’ve forgotten it myself once)
+4. If we miss one export, the data is lost — we can't retrieve old progress for comparison.
+-------------
+
+Why We Created This
+1. If you remember, our TestRail metrics are meant to be generated bi-weekly to help monitor test case progress and share updates with the BrinkQA team.
+2. Right now this responsibility is handed to new co-ops every term, but because it's a low-frequency task, it’s easy to forget — I’ve forgotten it myself once.
+3. and unfortunately, TestRail doesn’t store historical snapshots, so if we miss one export, the data is lost — we can't retrieve old progress for comparison.
+
+What I Did
+I developed a JavaScript script using TestRail API to retrieve all test cases data from TestRail and Winodws Task Scheduler to:
+1. Run every week
+2. Export the full set of Brink POS test cases
+3. Store them in a timestamped Excel file under raw_data
+4. Append a unique number if a file already exists
+5. Email the report to myself (or anyone specified)
+
+Benefits
+1. We never miss a data point again
+2. The task becomes hands-off for future co-ops
+3. We can now accurately track progress over time

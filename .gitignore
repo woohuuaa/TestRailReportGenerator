@@ -1,0 +1,10 @@
+node_modules/
+.env
+logs/
+raw_data/
+CombinedStatus/
+TestRailMetrics/
+*.xlsx
+*.xlsm
+.DS_Store
+Thumbs.db
